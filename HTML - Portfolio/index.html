@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile | Siadat Ali</title>
+  <link rel="icon" href="images/faav.png" type="image/png" />
+  <meta name="description" content="Portfolio of Siadat Ali - A passionate front-end developer and computer science student.">
+</head>
+
+<body>
+
+  <header>
+    <h1>Siadat Ali - Computer Science Student</h1>
+    <p>A passionate learner and aspiring front-end developer.</p>
+  </header>
+
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#grades">Grades</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about-me" aria-labelledby="about-me-heading">
+      <h2 id="about-me-heading">About Me</h2>
+      <p>I'm a Computer Science student who enjoys building cool front-end projects. My favorite topics include:</p>
+      <ol>
+        <li>Responsive Design</li>
+        <li>JavaScript APIs</li>
+        <li>React.js basics</li>
+      </ol>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Project Showcase</h2>
+
+      <article role="group" aria-labelledby="project1-title">
+        <h3 id="project1-title">Project 1: Weather App</h3>
+        <p><i>Description: Uses OpenWeather API to show live weather.</i></p>
+     
+      </article>
+
+      <article role="group" aria-labelledby="project2-title">
+        <h3 id="project2-title">Project 2: Portfolio Website</h3>
+        <p><i>Description: Built using HTML, CSS, and a touch of JavaScript.</i></p>
+      </article>
+    </section>
+
+    <section id="grades" aria-labelledby="grades-heading">
+      <h2 id="grades-heading">Subjects & Grades</h2>
+      <table border="1" role="table" aria-label="Subjects and Grades">
+        <thead>
+          <tr>
+            <th>Subjects</th>
+            <th>Grades</th>
+            <th>Topics Covered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>A</td>
+            <td>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Layout</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>B+</td>
+            <td>
+              <ul>
+                <li>Loops</li>
+                <li>DOM</li>
+                <li>Functions</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Databases</td>
+            <td>A-</td>
+            <td>
+              <ul>
+                <li>MySQL</li>
+                <li>ERD</li>
+                <li>Normalization</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact / Feedback Form</h2>
+      <form action="#" autocomplete="on">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required /><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your last name" required /><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required /><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required /><br>
+
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="Enter the URL to your portfolio" /><br>
+
+        <label for="birth-date">Birth Date:</label>
+        <input type="date" id="birth-date" name="birth-date" required /><br>
+
+        <fieldset role="radiogroup">
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br>
+
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </fieldset><br>
+
+        <label for="file">Upload a File:</label>
+        <input type="file" id="file" name="file" /><br>
+
+        <label for="time">Preferred Time to Contact:</label>
+        <input type="time" id="time" name="time" /><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" /><br>
+
+        <label for="html-skill">Rate your HTML skills:</label>
+        <input type="range" id="html-skill" name="html-skill" min="1" max="10" /><br>
+
+        <label for="poke-button">Poke Me:</label>
+        <input type="button" id="poke-button" value="Poke" /><br><br>
+
+        <label for="story">Tell us about your past projects:</label><br>
+        <textarea id="story" name="story" cols="30" rows="5" placeholder="Describe your projects..."></textarea><br><br>
+
+        <fieldset>
+          <legend>Which Technologies Have You Used?</legend>
+          <input type="checkbox" id="C" name="language" value="C" />
+          <label for="C">C</label><br>
+
+          <input type="checkbox" id="Python" name="language" value="Python" />
+          <label for="Python">Python</label><br>
+
+          <input type="checkbox" id="Java" name="language" value="Java" />
+          <label for="Java">Java</label><br>
+        </fieldset><br>
+
+        <fieldset role="radiogroup">
+          <legend>Are you a student?</legend>
+          <input type="radio" id="yes" name="student" value="yes" />
+          <label for="yes">Yes</label><br>
+
+          <input type="radio" id="no" name="student" value="no" />
+          <label for="no">No</label><br>
+        </fieldset><br>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Siadat Ali. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
